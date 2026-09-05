@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-sre11-ETL-DEV"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"DS_REST_PARQUET_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsrc0.dfs.core.windows.net/"
+		},
+		"DS_REST_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsrc0.dfs.core.windows.net/"
+		},
+		"LS_RestService1_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/PMGirm/data"
+		}
+	}
+}
