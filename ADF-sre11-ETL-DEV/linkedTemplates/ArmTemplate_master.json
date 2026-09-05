@@ -15,6 +15,22 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'DS_REST_PARQUET'"
 		},
+		"LS_SFTP_ADLS_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_ADLS_PARQUET'"
+		},
+		"LS_SFTP_SINKPARQ_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_SINKPARQ'"
+		},
+		"LS_SQL_ADLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_ADLS'"
+		},
+		"LS_SqlServerTable_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SqlServerTable'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevvbsrc0.dfs.core.windows.net/"
@@ -26,6 +42,30 @@
 		"LS_RestService1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://retoolapi.dev/PMGirm/data"
+		},
+		"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevisionboardraw0.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINKPARQ_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsrc0.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsrc0.dfs.core.windows.net/"
+		},
+		"LS_SqlServerTable_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-QKVT66D"
+		},
+		"LS_SqlServerTable_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "ADEPROJECT"
+		},
+		"LS_SqlServerTable_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Sreeni"
 		},
 		"containerUri": {
 			"type": "string",
@@ -60,6 +100,18 @@
 					"DS_REST_PARQUET_accountKey": {
 						"value": "[parameters('DS_REST_PARQUET_accountKey')]"
 					},
+					"LS_SFTP_ADLS_PARQUET_accountKey": {
+						"value": "[parameters('LS_SFTP_ADLS_PARQUET_accountKey')]"
+					},
+					"LS_SFTP_SINKPARQ_accountKey": {
+						"value": "[parameters('LS_SFTP_SINKPARQ_accountKey')]"
+					},
+					"LS_SQL_ADLS_accountKey": {
+						"value": "[parameters('LS_SQL_ADLS_accountKey')]"
+					},
+					"LS_SqlServerTable_password": {
+						"value": "[parameters('LS_SqlServerTable_password')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
@@ -68,6 +120,24 @@
 					},
 					"LS_RestService1_properties_typeProperties_url": {
 						"value": "[parameters('LS_RestService1_properties_typeProperties_url')]"
+					},
+					"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_SFTP_ADLS_PARQUET_properties_typeProperties_url')]"
+					},
+					"LS_SFTP_SINKPARQ_properties_typeProperties_url": {
+						"value": "[parameters('LS_SFTP_SINKPARQ_properties_typeProperties_url')]"
+					},
+					"LS_SQL_ADLS_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_ADLS_properties_typeProperties_url')]"
+					},
+					"LS_SqlServerTable_properties_typeProperties_server": {
+						"value": "[parameters('LS_SqlServerTable_properties_typeProperties_server')]"
+					},
+					"LS_SqlServerTable_properties_typeProperties_database": {
+						"value": "[parameters('LS_SqlServerTable_properties_typeProperties_database')]"
+					},
+					"LS_SqlServerTable_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SqlServerTable_properties_typeProperties_userName')]"
 					}
 				}
 			},

@@ -11,6 +11,18 @@
 		"DS_REST_PARQUET_accountKey": {
 			"value": ""
 		},
+		"LS_SFTP_ADLS_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_SINKPARQ_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SqlServerTable_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsdevvbsrc0.dfs.core.windows.net/"
 		},
@@ -19,6 +31,24 @@
 		},
 		"LS_RestService1_properties_typeProperties_url": {
 			"value": "https://retoolapi.dev/PMGirm/data"
+		},
+		"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevisionboardraw0.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINKPARQ_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsrc0.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsrc0.dfs.core.windows.net/"
+		},
+		"LS_SqlServerTable_properties_typeProperties_server": {
+			"value": "DESKTOP-QKVT66D"
+		},
+		"LS_SqlServerTable_properties_typeProperties_database": {
+			"value": "ADEPROJECT"
+		},
+		"LS_SqlServerTable_properties_typeProperties_userName": {
+			"value": "Sreeni"
 		}
 	}
 }
