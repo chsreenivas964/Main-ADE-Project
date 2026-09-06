@@ -4,20 +4,23 @@
 	"properties": {
 		"parameters": {
 			"Storage Account Location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@activity('LKUP_JOB_DETAILS').output.firstRow.sourcedata"
 			},
 			"Column Delimiter": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@activity('LKUP_JOB_DETAILS').output.firstRow.delimiter"
 			},
 			"Filename": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@activity('LKUP_JOB_DETAILS').output.firstRow.sourcefile"
 			}
 		},
 		"annotations": [],
 		"type": "AzureBlobFS",
 		"typeProperties": {
 			"url": "https://adlsdevisionboardraw0.dfs.core.windows.net/",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEVDMEMxQTA3LTY4MzItNDc3OC04QTBFLTlEQTFBRTM3OUREMV85ZWY4MWUzOS03ZTMzLTRkZTAtYjBiYi02ZjY2MzQzY2Y4Y2QiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEVDMEMxQTA3LTY4MzItNDc3OC04QTBFLTlEQTFBRTM3OUREMV83OTRkYTk0MC0yODBlLTQ2ZjUtYjliZi1kODg1NjJkYmViNjAiDQp9"
 		}
 	}
 }
