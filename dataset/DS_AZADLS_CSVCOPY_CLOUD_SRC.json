@@ -5,9 +5,7 @@
 			"referenceName": "LS_AZADLS_VB_CLOUD_RAW",
 			"type": "LinkedServiceReference",
 			"parameters": {
-				"Storage_ account _loc": "@activity('LKUP_JOB_DETAILS').output.firstRow.sourcedata",
-				"Col_delimiter": "@activity('LKUP_JOB_DETAILS').output.firstRow.delimiter",
-				"filename": "@activity('LKUP_JOB_DETAILS').output.firstRow.sourcefile"
+				"Storage_ account _loc": "@activity('LKUP_JOB_DETAILS').output.firstRow.sourcedata"
 			}
 		},
 		"annotations": [],
