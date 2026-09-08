@@ -1,0 +1,10 @@
+{
+	"name": "LS_JSON_AzureDataLakeStorage",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsdevisionboardraw0.dfs.core.windows.net/"
+		}
+	}
+}
