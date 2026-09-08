@@ -1,8 +1,8 @@
 {
-	"name": "DS_AZADLS_EXCELCOPY_CLOUD_SRC",
+	"name": "DS_AZADLS_VB_CLOUD_CSV_SINK",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_AZADLS_EXCELCOPY_CLOUD_SRC",
+			"referenceName": "LS_AZADLS_VB_CLOUD_CSV_SINK",
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"Storage_account_loc": {
@@ -14,28 +14,16 @@
 		"parameters": {
 			"Storage_account_loc": {
 				"type": "string"
-			},
-			"Sheetname": {
-				"type": "string"
-			},
-			"filename": {
-				"type": "string"
 			}
 		},
 		"annotations": [],
-		"type": "Excel",
+		"type": "Parquet",
 		"typeProperties": {
-			"sheetName": {
-				"value": "@dataset().Sheetname",
-				"type": "Expression"
-			},
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().filename",
-					"type": "Expression"
-				}
-			}
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
 		},
 		"schema": []
 	}
