@@ -2,7 +2,7 @@
 	"name": "LS_AZADLS_EXCEL_CLOUD_COPY",
 	"properties": {
 		"parameters": {
-			"Storaaage_account_loc": {
+			"Storage_account_loc": {
 				"type": "string"
 			}
 		},
