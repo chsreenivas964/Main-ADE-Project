@@ -152,7 +152,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Storage_account_loc": {
-								"value": "@activity('LKUP_JOB_DETAILS').output.firstRow.sourcedata",
+								"value": "/@dataset().storage_account_loc",
+								"type": "Expression"
+							},
+							"directory": {
+								"value": "/@dataset().directory",
 								"type": "Expression"
 							}
 						}
