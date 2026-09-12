@@ -155,7 +155,7 @@
 								"value": "@activity('LKUP_JOB_DETAILS').output",
 								"type": "Expression"
 							},
-							"directory": {
+							"Directory": {
 								"value": "@activity('LKUP_JOB_DETAILS').output.firstRow",
 								"type": "Expression"
 							}

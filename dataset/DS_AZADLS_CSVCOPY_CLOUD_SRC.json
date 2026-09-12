@@ -24,9 +24,15 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "@dataset().filename"
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				}
 			},
-			"columnDelimiter": "@dataset().col_delimiter",
+			"columnDelimiter": {
+				"value": "@dataset().col_delimiter",
+				"type": "Expression"
+			},
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

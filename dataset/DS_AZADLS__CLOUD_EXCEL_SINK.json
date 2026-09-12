@@ -15,7 +15,7 @@
 			"Storage_account_loc": {
 				"type": "string"
 			},
-			"directory": {
+			"Directory": {
 				"type": "string"
 			}
 		},
