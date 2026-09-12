@@ -1,0 +1,37 @@
+{
+	"name": "DS_AZADLS__CLOUD_EXCEL_SINK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AZADLS__CLOUD_EXCEL_SINK",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"Storage_account_loc": {
+					"value": "@dataset().Storage_account_loc",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"Storage_account_loc": {
+				"type": "string"
+			},
+			"directory": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

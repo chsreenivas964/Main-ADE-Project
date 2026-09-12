@@ -148,15 +148,15 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_AZADLS_VB_CLOUD_CSV_SINK",
+						"referenceName": "DS_AZADLS__CLOUD_EXCEL_SINK",
 						"type": "DatasetReference",
 						"parameters": {
 							"Storage_account_loc": {
-								"value": "/@dataset().storage_account_loc",
+								"value": "@activity('LKUP_JOB_DETAILS').output",
 								"type": "Expression"
 							},
 							"directory": {
-								"value": "/@dataset().directory",
+								"value": "@activity('LKUP_JOB_DETAILS').output.firstRow",
 								"type": "Expression"
 							}
 						}
