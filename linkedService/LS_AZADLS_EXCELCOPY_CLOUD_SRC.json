@@ -9,7 +9,7 @@
 		"annotations": [],
 		"type": "AzureBlobFS",
 		"typeProperties": {
-			"url": "https://adlsdevisionboardraw0.dfs.core.windows.net"
+			"url": "@{linkedService().Storage_account_loc}"
 		}
 	}
 }
