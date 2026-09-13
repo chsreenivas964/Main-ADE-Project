@@ -35,6 +35,7 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
+				"folderPath": "excel",
 				"fileSystem": "input"
 			}
 		},
