@@ -1,0 +1,25 @@
+{
+	"name": "Event trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_SNOWFLAKE",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 10,
+				"startTime": "2026-09-15T04:00:00",
+				"endTime": "2026-09-14T04:30:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
