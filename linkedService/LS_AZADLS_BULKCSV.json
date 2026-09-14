@@ -1,0 +1,10 @@
+{
+	"name": "LS_AZADLS_BULKCSV",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsdevisionboardraw0.dfs.core.windows.net/"
+		}
+	}
+}
