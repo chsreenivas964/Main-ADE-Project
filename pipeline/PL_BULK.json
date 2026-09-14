@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "CPY_BULK",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -19,7 +19,9 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
-							"fileListPath": "input/bulk",
+							"recursive": true,
+							"wildcardFolderPath": "bulk",
+							"wildcardFileName": "*",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
