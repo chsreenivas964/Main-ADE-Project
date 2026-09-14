@@ -1,0 +1,10 @@
+{
+	"name": "LS_ADLS_Parquet1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsdevvbsrc0.dfs.core.windows.net/"
+		}
+	}
+}
