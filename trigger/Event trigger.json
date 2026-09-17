@@ -9,15 +9,21 @@
 					"referenceName": "PL_SNOWFLAKE",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "PL_BLOB_ADLS",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
-				"interval": 10,
-				"startTime": "2026-09-15T04:00:00",
-				"endTime": "2026-09-14T04:30:00",
+				"frequency": "Hour",
+				"interval": 2,
+				"startTime": "2026-09-17T00:00:00",
+				"endTime": "2026-09-18T23:30:00",
 				"timeZone": "India Standard Time"
 			}
 		}
