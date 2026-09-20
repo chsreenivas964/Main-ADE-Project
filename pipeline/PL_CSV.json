@@ -68,7 +68,7 @@
 								"type": "Expression"
 							},
 							"Col_delimiter": {
-								"value": "@activity('LKUP_JOB_DETAILS').output.firstRow.sourcedata",
+								"value": "@activity('LKUP_JOB_DETAILS').output.firstRow.delimiter",
 								"type": "Expression"
 							},
 							"filename": {

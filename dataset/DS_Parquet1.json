@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"folderPath": "csvcloud",
 				"fileSystem": "input"
 			},
 			"compressionCodec": "snappy"

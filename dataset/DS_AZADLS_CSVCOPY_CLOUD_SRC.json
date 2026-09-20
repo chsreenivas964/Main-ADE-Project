@@ -28,10 +28,7 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
-				"folderPath": {
-					"value": "CSV\n@concat(\n    'CSV/',\n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/',\n    formatDateTime(utcNow(), 'dd')\n)",
-					"type": "Expression"
-				},
+				"folderPath": "csv",
 				"fileSystem": "input"
 			},
 			"columnDelimiter": {
