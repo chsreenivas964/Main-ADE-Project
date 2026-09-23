@@ -11,11 +11,6 @@
 				}
 			}
 		},
-		"parameters": {
-			"Storage_account_loc": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

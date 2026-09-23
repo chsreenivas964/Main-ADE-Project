@@ -6,14 +6,9 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"Storage_account_loc": {
-					"value": "@dataset().Sorage_account_loc",
+					"value": "@dataset().Storage_account_loc",
 					"type": "Expression"
 				}
-			}
-		},
-		"parameters": {
-			"Sorage_account_loc": {
-				"type": "string"
 			}
 		},
 		"annotations": [],
