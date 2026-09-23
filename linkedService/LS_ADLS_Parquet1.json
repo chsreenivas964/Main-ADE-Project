@@ -1,15 +1,10 @@
 {
 	"name": "LS_ADLS_Parquet1",
 	"properties": {
-		"parameters": {
-			"Storage_account_loc": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "AzureBlobFS",
 		"typeProperties": {
-			"url": "@{linkedService().Storage_account_loc}"
+			"url": "https://adlsdevvbsrc0.dfs.core.windows.net/"
 		}
 	}
 }
