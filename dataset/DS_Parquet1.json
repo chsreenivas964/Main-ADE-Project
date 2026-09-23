@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "csvcloud",
+				"folderPath": {
+					"value": "@concat(\n    'csvcloud/',\n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/',\n    formatDateTime(utcNow(), 'dd')\n)\n",
+					"type": "Expression"
+				},
 				"fileSystem": "input"
 			},
 			"compressionCodec": "snappy"
