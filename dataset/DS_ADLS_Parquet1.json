@@ -3,14 +3,28 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_ADLS_Parquet1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"Storage_account_loc": {
+					"value": "@dataset().Sorage_account_loc",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"Sorage_account_loc": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "bulk",
+				"folderPath": {
+					"value": "@concat(\n    'bulk/',\n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/',\n    formatDateTime(utcNow(), 'dd')\n)",
+					"type": "Expression"
+				},
 				"fileSystem": "input"
 			},
 			"compressionCodec": "snappy"
